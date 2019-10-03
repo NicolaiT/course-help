@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dk.sdu.imada.NumberCalculationsSpec" tests="9" skipped="0" failures="0" errors="0" timestamp="2019-09-09T06:57:06" hostname="DESKTOP-O4COTV8" time="0.198">
+  <properties/>
+  <testcase name="Check exception is thrown for 0 input" classname="dk.sdu.imada.NumberCalculationsSpec" time="0.174"/>
+  <testcase name="Check the first two fibbonnacci numbers are 1[0]" classname="dk.sdu.imada.NumberCalculationsSpec" time="0.006"/>
+  <testcase name="Check the first two fibbonnacci numbers are 1[1]" classname="dk.sdu.imada.NumberCalculationsSpec" time="0.0"/>
+  <testcase name="Check the third fibbonnacci number is 2" classname="dk.sdu.imada.NumberCalculationsSpec" time="0.001"/>
+  <testcase name="Check some of the bigger numbers in fibbonnacci sequence fib(15)=610" classname="dk.sdu.imada.NumberCalculationsSpec" time="0.0"/>
+  <testcase name="Check some of the bigger numbers in fibbonnacci sequence fib(20)=6765" classname="dk.sdu.imada.NumberCalculationsSpec" time="0.0"/>
+  <testcase name="Check some of the bigger numbers in fibbonnacci sequence fib(25)=75025" classname="dk.sdu.imada.NumberCalculationsSpec" time="0.001"/>
+  <testcase name="This test should be updated with the result for your assignment" classname="dk.sdu.imada.NumberCalculationsSpec" time="0.0"/>
+  <testcase name="Check a quite large fibonnacci number" classname="dk.sdu.imada.NumberCalculationsSpec" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
