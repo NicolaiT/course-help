@@ -1,0 +1,64 @@
+= README
+
+== Introduction
+
+In this first exercise to get familiar with Gradle, an enterprise setup using packages and a testing framework,
+you must implement the Fibonnacci calculator in the `NumberCalculations` class.
+
+The Fibonnacci numbers are defined like this:
+
+* The first fibbonnacci number is 1
+* The second fibbonnacci number is 2
+* The n'th fibbonnacci number is the sum of the (n-1)'th and the (n-2)'th
+
+=== Gradle
+
+https://gradle.org[Gradle] is a powerfull build tool  used for building and executing larger Java projects. It comes with a Gradle wrapper,
+so it can bootstrap itself. The build specification is in the file `build.gradle`, but don't worry, it is set up for you.
+
+You can run the application using the command
+
+ ./gradlew run
+
+It will compile and execute the Main method in the Main class, located in `src/main/java/dk/sdu/imada/Main.java`
+
+You can also use Gradle to execute the tests. For this use
+
+ ./gradlew test
+
+TIP: If you are on windows, use gradlew.bat instead of gradlew
+
+=== Spock Tests
+
+http://spockframework.org/[Spock] is a test framework, that using the http://groovy-lang.org/[Groovy] language is very
+powerfull and readable to write test specifications in.
+
+You can find the tests written for the Fibonnacci calculation in the file `src/test/groovy/dk/sdu/imada/NumberCalculationsSpec.groovy`
+
+== The Tasks
+
+Run the tests using:
+
+ ./gradlew test
+
+Open the test report and look at the test results. You can now working in a TDD (Test Driven Development) way.
+Take a look at the first test, which says 'Check exception is thrown for 0 input'. It indicates an exception must be
+thrown if the input is smaller than 1. If you insert this into the `calculateFibonnacci` method:
+
+[source, java]
+----
+if( number < 1) {
+    throw new InputException("Input must be >= 1");
+}
+----
+
+And run the tests again, you should see one test passing!
+
+Implement code for to make each test pass, running the tests regularly.
+
+=== Extra credit exercise
+
+In the Spock test, the last test method is annotated with `@Ignore`. Try to remove this annotation and run the tests.
+They will likely just hang for a long time! (Feel free to abort)
+
+Try to implement caching, so the method remembers previously calculated results, and see if you can speed it up.
