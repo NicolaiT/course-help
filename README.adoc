@@ -1,5 +1,5 @@
 = Course Help Repository
-
+Jeg har lavet noget her
 == Structure of the Repository
 
 TIP: Discuss repo structure and commit
@@ -8,3 +8,12 @@ Topic
 Chapters
 Programming languages.
 I honestly don't know how to format this.
+
+
+gjiasdfijsgjiglæ
+
+YEET
+Yeet
+
+=== Datalogi
+

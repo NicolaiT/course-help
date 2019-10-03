@@ -1,0 +1,25 @@
+sorter: alloc.o file_handling.o parsing.o print.o sorter.o
+	ld -o sorter alloc.o file_handling.o \
+		parsing.o print.o sorter.o
+
+alloc.o: alloc.s
+	as -gstabs -o alloc.o alloc.s
+
+file_handling.o: file_handling.s
+	as -gstabs -o file_handling.o file_handling.s
+
+parsing.o: parsing.s
+	as -gstabs -o parsing.o parsing.s
+
+print.o: print.s
+	as -gstabs -o print.o print.s
+
+sorter.o: sorter.s
+	as -gstabs -o sorter.o sorter.s
+
+utils.o: utils.s
+	as -gstabs -o utils.o utils.s
+
+.PHONY: clean # 'clean' is not a real file
+clean:        # so it should be declared phony
+	rm -f *.o sorter
