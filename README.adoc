@@ -1,3 +1,7 @@
 = Course Help Repository
 
 TIP: Discuss repo structure and commit
+
+Topic
+Chapters
+Programming languages
