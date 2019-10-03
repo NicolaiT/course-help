@@ -4,4 +4,5 @@ TIP: Discuss repo structure and commit
 
 Topic
 Chapters
-Programming languages
+Programming languages.
+I honestly don't know how to format this.
